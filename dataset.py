@@ -619,9 +619,7 @@ elif menu =="AI Usage Analysis":
 )
 
   fig.update_layout(
-    height=500,
-    title="Weekly AI Usage vs Traditional Study Hours",
-    title_x=0.5
+    height=500
 )
 
   st.plotly_chart(fig, use_container_width=True)
@@ -799,17 +797,13 @@ elif menu =="Academic Performance":
     x="Weekly_GenAI_Hours",
     y="Post_Semester_GPA",
     color="Year_of_Study",
-    title="Weekly AI Usage vs Post Semester GPA",
     template="plotly_white"
 )
 
   fig.update_traces(marker=dict(size=8))
 
   fig.update_layout(
-    height=500,
-    title_x=0.5,
-    xaxis_title="Weekly AI Usage (Hours)",
-    yaxis_title="Post Semester GPA"
+    height=500
 )
 
   st.plotly_chart(fig, use_container_width=True)
@@ -1127,7 +1121,6 @@ elif menu == "Mental Health Analysis":
 )
 
   fig.update_layout(
-    title="Mental Health Correlation Matrix",
     height=600,
     template="plotly_white"
 )
@@ -1206,8 +1199,6 @@ elif menu == "Correlation Analysis":
 )
 
   fig.update_layout(
-    title="Academic Performance Across Burnout Levels",
-    title_x=0.5,
     height=550,
     template="plotly_white"
 )
@@ -1222,7 +1213,6 @@ elif menu == "Correlation Analysis":
     burnout_counts,
     names="Burnout_Risk_Level",
     values="Count",
-    title="🧠 Burnout Risk Level Distribution",
     hole=0.4,
     color_discrete_sequence=px.colors.qualitative.Set2
 )
@@ -1233,7 +1223,6 @@ elif menu == "Correlation Analysis":
 )
 
   fig.update_layout(
-    title_x=0.5,
     height=600
 )
 
