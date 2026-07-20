@@ -109,7 +109,7 @@ Explore how Artificial Intelligence influences students' learning, academic perf
 """, unsafe_allow_html=True)
  
 
-image = Image.open(r"C:\Users\Sakshi Sharma\Desktop\AI Impact on students\ai")
+ image = Image.open(r"C:\Users\Sakshi Sharma\Desktop\AI Impact on students\ai")
  st.image(
     image,
     use_container_width=True
