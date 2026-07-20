@@ -109,11 +109,9 @@ Explore how Artificial Intelligence influences students' learning, academic perf
 """, unsafe_allow_html=True)
  
 
- image = Image.open(r"ai.jpg")
- st.image(
-    image,
-    use_container_width=True
-)
+ image = Image.open("ai.jpg")
+ st.image(image)
+ 
  left,right=st.columns([2,1])
 
  with left:
